@@ -1,0 +1,78 @@
+LIKE, PYTHON
+============
+/likepython
+Like making computers do your bidding?
+Enjoy Python features like lambdas? Indent-grouping? List comprehensions?
+Tired of Old Man Python telling you what you can and can't say to your computer?
+It's about time programming languages understood what the kids are typing these days. So let's start with a baby step in that direction: Like, Python.
+
+
+
+EXAMPLE
+
+Like, Python uses Python's own tokenizer to essentially add keywords to Python's lexical understanding. Python is a subset of Like, Python, so any script you've already written in Python is valid Like, Python and will run in the interpreter. But you can also write like you'd speak. For example, the following is a fully-functional "hello world" script, included in the download as hello_world.lp:
+
+        #!usr/bin/python
+        # My first Like, Python script!
+
+        yo just print like "hello world" bro
+
+Here's a version that asks you for your name, then says hi. (Note that 'yo' is a Like, Python keyword but the interpreter actually understands real Python syntax, so the 'yo' in the input string works just fine.
+
+        #!usr/bin/python
+        uh from sys import exit
+
+        # Grab the user's name. 
+        ok so like name = raw_input("yo! what's your name?" ) right
+  
+        # Make sure they entered something, then say hi.
+        if name.strip() is actually like "":
+            toootally just exit()
+        else:
+            um yeah
+            print like "Hi %s, nice to meet you." % name
+
+A full list of Like, Python keywords is below (swearing optional):
+
+Valleygirl:	omg, so, like, totally, right, toootally
+Frat guy:	friggin, fuckin, dude, man, bro, broheim, broseph
+Internets:	lol, rofl, teh, ohai, plz
+Snoop:	yo, homey, homeboy, sup, dog, shit, girl, ma, biatch, ho, shiiit
+Local:	wicked, hella, anyways
+Misc: just, hey, yeah, ok, um, uh, ah, actually, something
+
+
+
+INSTALLATION
+
+To install on Mac OSX and Linux, just unzip, make sure you have Python 2.6.4 or greater, and admin privileges on your machine. Then, type the following from inside your likepython directory:
+
+        ~/downloads/likepython> sudo cp ./likepython /usr/bin/
+        ~/downloads/likepython> sudo chmod 555 /usr/bin/likepython
+
+If everything went well, you can now code in Like, Python! Test it on hello_world.lp (included) like so:
+
+        ~/downloads/likepython> likepython hello_world.lp
+
+If you get errors, you probably don't have the required version of Python (2.6.4 or greater).
+
+
+
+VERSION
+
+This is version 0.1, the stable alpha release. If you like it, let me know! jon[at]staringispolite.com
+
+Or, you know, if not, you can like, tell me what you think could be improved. Especially new words Like, Python should include. Bro - it could like totally be in the next release.
+
+
+
+LICENSE
+
+The MIT License
+Copyright (c) 2010 Jonathan Howard
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

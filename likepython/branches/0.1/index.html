@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+             "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Like, Python</title>
+  <link href="http://www.staringispolite.com/css/reset-min.css"
+        rel="stylesheet" type="text/css" />
+  <link href="http://www.staringispolite.com/css/base-min.css"
+        rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    body {
+      text-align: center;
+      font-family: tahoma, helvetica, arial, sans-serif;
+      color: #555555;
+    }
+
+    h1 {
+      color: #222222;
+      font-size: 30px;
+    }
+
+    h1 .subtitle {
+      font-size: 14px;
+      color: #555555;
+      font-weight: normal;
+    }
+
+    h2 {
+      color: #333333;
+      margin-top: 30px;
+    }
+
+    div.main {
+      margin: 0px auto;
+      width: 760px;
+      background-color: #f6f6ff;
+      text-align: left;
+      padding: 20px;
+      border-right: 1px solid #e6e6ef;
+    }
+
+    pre {
+      margin-right: 200px;
+      margin-left: 40px;
+      background-color: #e6e6ff;
+      padding: 10px;
+    }
+
+    p {
+      margin-left: 20px;
+    }
+
+    .download {
+      background-color: #e6e6e6;
+      border: 3px solid #eeeeee;
+      width: 290px;
+      height: 80px;
+      z-index: 10;
+      position: absolute;
+      top: 20px;
+      right: 100px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .download h2 {
+      margin-top: 10px;
+    }
+
+    .rackspace {
+      width: 120px;
+      z-index: 10;
+      position: absolute;
+      top: 160px;
+      right: 100px;
+      text-align: left;
+      background-color: #fff;
+    }
+
+    .rackspace img {
+      margin-top: 10px; 
+    }
+
+
+    a, a.visited {
+      color: #3B5998;
+    }
+
+  </style>
+
+</head>
+<body>
+<div class="main">
+<h1>
+  Like, Python<span class="subtitle"><em>(alpha)</em></span>
+</h1>
+
+<p>
+  Like making computers do your bidding?<br/>
+  Enjoy Python features like lambdas? Indent-grouping? List comprehensions?<br/>
+  Tired of <strong>Old Man Python</strong> telling you what you can and can't say to <strong>your</strong> computer?<br/>
+</p>
+<p>
+ It's about time programming languages understood what the kids are typing
+ these days. So let's start with a baby step in that direction:
+ <em>Like, Python</em>. 
+</p>
+<p>
+  <em>Like, Python</em> was created by Jonathan Howard in February 2010 while
+  drinking and reviewing code for an upcoming project with a coworker. 
+  At a certain point, higher-level explanations devolved into just flat-out
+  reading Python code like they were actually speaking the language normally -
+  complete with like's, um's, whatever's, etc - making it completely
+  <span style="text-decoration: line-through">impractical</span>
+  awesome for work. It was then that Jonathan realized he should perhaps
+  stop for the night. And START creating <em>Like, Python</em>.
+</p>
+
+<h2>
+  EXAMPLE
+</h2>
+<p>
+  <em>Like, Python</em> uses Python's own tokenizer to essentially add
+  keywords to Python's lexical understanding.
+  Python is a subset of <em>Like, Python</em>, so any script you've already
+  written in Python is valid <em>Like, Python</em> and will run in the 
+  interpreter.
+  But you can also write like you'd speak. For example, the following is a
+  fully-functional "hello world" script, included in the download as 
+  hello_world.lp:
+</p>
+<pre>
+  #!usr/bin/python
+  # My first Like, Python script!
+
+  yo just print like "hello world" bro
+</pre>
+<p>
+  Here's a version that asks you for your name, then says hi.
+  (Note that 'yo' is a <em>Like, Python</em> keyword but the interpreter
+  actually understands real Python syntax, so the 'yo' in the input string
+  works just fine.
+</p>
+<pre>
+  #!usr/bin/python
+  uh from sys import exit
+
+  # Grab the user's name. 
+  ok so like name = raw_input("yo! what's your name?" ) right
+  
+  # Make sure they entered something, then say hi.
+  if name.strip() is actually like "":
+      toootally just exit()
+  else:
+      um yeah
+      print like "Hi %s, nice to meet you." % name
+</pre>
+
+<p>
+A full list of <em>Like, Python</em> keywords is below (swearing optional):
+</p>
+<p>
+<ul>
+  <li>
+    Valleygirl:	omg, so, like, totally, right, toootally
+  </li>
+  <li>
+    Frat guy:	friggin, fuckin, dude, man, bro, broheim, broseph
+  </li>
+  <li>
+    Internets:	lol, rofl, teh, ohai, plz
+  </li>
+  <li>
+    Snoop:	yo, homey, homeboy, sup, dog, shit, girl, ma, biatch, ho, shiiit
+  </li>
+  <li>
+    Local:	wicked, hella, anyways 
+  </li>
+  <li>
+    Misc: 	just, hey, yeah, ok, um, uh, ah, actually, something
+  </li>
+</ul>
+</p>
+
+<h2>
+  INSTALLATION
+</h2>
+<p>
+  To install on Mac OSX and Linux, just unzip, make sure you have admin
+  privileges on your machine and, type the following from inside your
+  likepython directory:
+</p>
+<pre>
+  ~/downloads/likepython> sudo cp ./likepython /usr/bin/
+  ~/downloads/likepython> sudo chmod 555 /usr/bin/likepython
+</pre>
+<p>
+  If everything went well, you can now code in <em>Like, Python</em>!
+  Test it on hello_world.lp (included) like so:
+</p>
+<pre>
+  ~/downloads/likepython> likepython hello_world.lp
+</pre>
+
+<h2>
+VERSION
+</h2>
+<p>
+  This is version 0.1, the stable alpha release.
+  If you like it, let me know! 
+  jon<span style="display:none">athan</span>[at]staringispolite.com
+</p>
+<p>
+  Or, you know, if not, you can like, tell me what you think
+  could be improved. Especially new words Like, Python should include.
+  Bro - it could like totally be in the next release.
+</p>
+
+<h2>
+LICENSE
+</h2>
+<p>
+  The MIT License<br/>
+  Copyright (c) 2010 Jonathan Howard
+</p>
+
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+</p>
+<p>
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</p>
+<p>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</p>
+
+<div class="download">
+  <h2 style="margin-bottom: 5px">
+    Download Like, Python now!
+  </h2>
+  <div style="margin-bottom: 5px">
+    (Yep! It's <em>actually</em> real)
+  </div>
+  <a href="./likepython_0.1.tgz">linux/mac (.tgz)</a>
+  |
+  <a href="./likepython_0.1.tgz">windows (.zip)</a>
+</div>
+
+<div class="rackspace">
+Got reddited & scaled w/ no problem. Check these guys out:
+<a href="http://www.rackspacecloud.com/328-0-1-3.html" target="_blank"><img border="0" src="http://affiliates.rackspacecloud.com/banners/120x600.gif" width="120" height="600" alt="Cloud Computing & Cloud Hosting by Rackspace"></a>
+</div>
+
+</main>
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7765740-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+
