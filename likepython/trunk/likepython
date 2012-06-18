@@ -17,12 +17,20 @@ like_python_tokens = ['omg','so','like','totally','right','toootally',
                           'something',
                      ]
 
+like_python_mappings = {'tellem':'print', 'holla':'print', 'srsly':'finally',
+                        'rockon':'continue', 'an':'and', 'mostdef':'assert',
+                        'fuckit':'exit'
+                       }
+
 def handle_input():
   if len(sys.argv) == 2:
     return sys.argv[1]
   else:
     print "Usage: likepython path/to/file.lp"
     exit()
+
+def py_map(token):
+  return token if token not in like_python_mappings else like_python_mappings[token]
 
 def main():
     # Parse input file for tokens
@@ -31,7 +39,7 @@ def main():
     tokens = tokenize.generate_tokens(file.readline)
 
     # Remove likepython tokens, leaving valid python temp file behind.
-    py_tokens = [(type,token) for (type,token, _, _, _) in tokens if token not in like_python_tokens]
+    py_tokens = [(type,py_map(token)) for (type,token, _, _, _) in tokens if token not in like_python_tokens]
     py = tokenize.untokenize(py_tokens)
     output_filename = input_file + ".py"
     output_file = open(output_filename, 'w')
